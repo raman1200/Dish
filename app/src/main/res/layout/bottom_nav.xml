@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:padding="16dp"
+        android:id="@+id/ll"
+        android:background="@color/white">
+    <!-- Cook tab -->
+    <LinearLayout
+        android:id="@+id/cook"
+
+        style="@style/icon_layout">
+
+        <ImageView
+            android:id="@+id/cook_icon"
+            android:src="@drawable/cook"
+            style="@style/icon"
+            />
+
+        <TextView
+            android:id="@+id/cook_text"
+            style="@style/icon_text"
+            android:text="Cook"
+            />
+
+    </LinearLayout>
+
+    <!-- Favourites tab -->
+    <LinearLayout
+        android:id="@+id/favourite"
+        style="@style/icon_layout"
+        >
+        <ImageView
+            android:id="@+id/favourite_icon"
+            style="@style/icon"
+            android:src="@drawable/heart" />
+
+        <TextView
+            android:id="@+id/favourite_text"
+            style="@style/icon_text"
+            android:text="Favourites"
+            />
+    </LinearLayout>
+
+    <!-- Manual tab -->
+    <LinearLayout
+        android:id="@+id/manual"
+        style="@style/icon_layout">
+
+        <ImageView
+            android:id="@+id/manual_icon"
+            style="@style/icon"
+            android:src="@drawable/chef_hat"
+             />
+
+        <TextView
+            android:id="@+id/manual_text"
+            style="@style/icon_text"
+            android:text="Manual"
+            />
+    </LinearLayout>
+
+    <!-- Device tab -->
+    <LinearLayout
+        android:id="@+id/device"
+        style="@style/icon_layout">
+
+        <ImageView
+            android:id="@+id/device_icon"
+            style="@style/icon"
+            android:src="@drawable/device"
+             />
+
+        <TextView
+            android:id="@+id/device_text"
+            android:text="Device"
+            style="@style/icon_text"/>
+    </LinearLayout>
+
+    <!-- Preferences tab -->
+    <LinearLayout
+        android:id="@+id/preference"
+        style="@style/icon_layout">
+
+        <ImageView
+            android:id="@+id/preference_icon"
+            style="@style/icon"
+            android:src="@drawable/profile"
+            />
+
+        <TextView
+            android:id="@+id/preference_text"
+            android:text="Preferences"
+            style="@style/icon_text"/>
+    </LinearLayout>
+
+    <!-- Settings tab -->
+    <LinearLayout
+        android:id="@+id/setting"
+        style="@style/icon_layout">
+
+        <ImageView
+            android:id="@+id/setting_icon"
+            android:src="@drawable/setting"
+            style="@style/icon" />
+
+        <TextView
+            android:id="@+id/setting_text"
+            style="@style/icon_text"
+            android:text="Settings"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

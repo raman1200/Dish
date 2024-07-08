@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    android:layout_width="270dp"
+    android:layout_marginEnd="10dp"
+    android:elevation="8dp"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0.0px"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item"
+        android:padding="12dp"
+        android:background="@drawable/shadow_right_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/dish_img"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@drawable/dish_bg"
+            android:backgroundTint="@color/bg"
+            android:scaleType="centerCrop"
+            android:src="@drawable/paneer_tikka"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/corner_round" />
+
+        <ImageView
+            android:id="@+id/color_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:background="@drawable/symbol_bg"
+            android:src="@drawable/veg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-16dp"
+            android:background="@drawable/rating_bg"
+            android:text="★ 4.2"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/dish_img"
+            app:layout_constraintEnd_toEndOf="@+id/dish_img"
+            app:layout_constraintStart_toStartOf="@+id/dish_img" />
+
+        <TextView
+            android:id="@+id/dish_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:minLines="2"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Panner Tikka"
+            android:textColor="@color/blue"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="@+id/dish_img"
+            app:layout_constraintStart_toStartOf="@+id/dish_img"
+            app:layout_constraintTop_toBottomOf="@+id/dish_img" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dish_name">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/cook"
+                android:layout_marginEnd="10dp"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="30 min • Medium prep." />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

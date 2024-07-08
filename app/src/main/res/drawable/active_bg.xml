@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="@color/black" />
+        </shape>
+    </item>
+
+    <item android:gravity="center">
+        <shape android:shape="oval" >
+            <solid android:color="@color/white" />
+            <size android:width="48dp" android:height="48dp" />
+        </shape>
+    </item>
+
+    <item>
+        <rotate
+            android:fromDegrees="0"
+            android:pivotX="50%"
+            android:pivotY="0%"
+            android:toDegrees="0" >
+            <shape android:shape="oval" >
+                <solid android:color="@color/white" />
+            </shape>
+        </rotate>
+    </item>
+    <item>
+        <rotate
+            android:fromDegrees="30"
+            android:pivotX="0%"
+            android:pivotY="0%"
+            android:toDegrees="0" >
+            <shape android:shape="rectangle" >
+                <solid android:color="@color/white" />
+            </shape>
+        </rotate>
+    </item>
+    <item>
+        <rotate
+            android:fromDegrees="30"
+            android:pivotX="50%"
+            android:pivotY="0%"
+            android:toDegrees="0" >
+            <shape android:shape="rectangle" >
+                <solid android:color="@color/white" />
+            </shape>
+        </rotate>
+    </item>
+    <item android:gravity="center">
+
+        <rotate
+            android:fromDegrees="-20"
+            android:pivotX="60%"
+            android:pivotY="10%"
+            android:toDegrees="0" >
+            <shape android:shape="oval">
+                <solid android:color="#E7700D" />
+                <size android:width="20dp" android:height="20dp" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
+

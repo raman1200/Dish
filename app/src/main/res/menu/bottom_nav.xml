@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cook"
+        android:title="Cook"
+        android:icon="@drawable/cook_fill" />
+    <item
+        android:id="@+id/favourite"
+        android:title="Favourites"
+        android:icon="@drawable/heart" />
+    <item
+        android:id="@+id/manual"
+        android:title="Manual"
+        android:icon="@drawable/chef_hat" />
+    <item
+        android:id="@+id/device"
+        android:title="Device"
+        android:icon="@drawable/device" />
+    <item
+        android:id="@+id/setting"
+        android:title="Settings"
+        android:icon="@drawable/setting" />
+
+</menu>
